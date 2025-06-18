@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Synergy Smart Company</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .marquee-banner {
+      background: #003366;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .animated-section {
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .team-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .team-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>About Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="marquee-banner">
+    <marquee behavior="scroll" direction="left">Empowering Ghana with Clean Energy Solutions — Synergy Smart Company</marquee>
+  </div>
+
+  <section>
+    <div class="container animated-section">
+      <h2>Who We Are</h2>
+      <p><strong>Synergy Smart Company</strong> is a forward-thinking renewable energy firm focused on delivering clean, reliable, and cost-effective solar solutions to Ghana's industrial sector. Our mission is to drive sustainable industrial development by helping organizations transition to smarter energy systems.</p>
+
+      <h2>What We Stand For</h2>
+      <ul>
+        <li><strong>Clean Energy:</strong> We believe in powering progress without polluting the planet. Our solar systems reduce carbon emissions and promote environmental stewardship.</li>
+        <li><strong>Industrial Precision:</strong> We tailor each system to the specific demands of heavy-duty, high-energy operations, ensuring maximum efficiency and uptime.</li>
+        <li><strong>Innovation:</strong> We embrace the latest technology in solar power, storage, and monitoring to offer scalable, intelligent solutions.</li>
+        <li><strong>Partnership:</strong> We view our clients as long-term partners. Your energy success is our success.</li>
+      </ul>
+
+      <h2>Our Vision</h2>
+      <p>To become Ghana’s leading provider of industrial-scale renewable energy systems—setting the standard for efficiency, sustainability, and customer satisfaction in West Africa.</p>
+
+      <h2>Our Team</h2>
+      <p>Our diverse team of engineers, designers, and project managers brings decades of combined experience in energy infrastructure, sustainability, and systems integration. We're passionate about creating a cleaner, smarter energy future for all.</p>
+
+      <div class="team-grid">
+        <img src="t.jpg" alt="Team Member 1">
+        <img src="2.jpg" alt="Team Member 2">
+        <img src="3.jpg" alt="Team Member 3">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Synergy Smart Company. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

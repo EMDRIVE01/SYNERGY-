@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Synergy Smart Group</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .parallax {
+      background: url('solar4.jpg') center/cover fixed;
+      padding: 100px 0;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .form-field {
+      animation: fadeIn 1s ease-in-out;
+      transition: all 0.3s ease;
+    }
+
+    .form-field:focus {
+      outline: 2px solid #007bff;
+      transform: scale(1.02);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="parallax">
+    Let’s Power a Sustainable Future — Contact Synergy Smart Group
+  </div>
+
+  <section class="alt">
+    <div class="container">
+      <p>Email: info.synergysmart@gmail.com</p>
+      <p>Phone: +233 20 900 7371</p>
+      <p>Office: Accra, Ghana</p>
+
+      <form id="contactForm">
+        <input type="text" class="form-field" placeholder="Name" required>
+        <input type="email" class="form-field" placeholder="Email" required>
+        <input type="text" class="form-field" placeholder="Company">
+        <textarea class="form-field" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Synergy Smart Group. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

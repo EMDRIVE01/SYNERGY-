@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Synergy Smart Group</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .animated-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 20px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="animated-title">🌞 Our Impact Across Ghana</h2>
+      <marquee behavior="scroll" direction="left">Explore Our Featured Renewable Energy Projects</marquee>
+      <ul>
+        <li><strong>Tema:</strong> 250kW hybrid solar with battery backup</li>
+        <li><strong>Kumasi:</strong> 180kW solar system, 70% reduction in grid reliance</li>
+        <li><strong>Takoradi:</strong> Smart monitoring with solar array</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects-gallery">
+    <div class="container">
+      <div class="gallery">
+        <img src="solar1.jpg" alt="Hybrid solar farm with agriculture" onclick="openModal(this)">
+        <img src="solar2.jpg" alt="Solar panels across farmlands" onclick="openModal(this)">
+        <img src="solar3.jpg" alt="Large-scale solar field" onclick="openModal(this)">
+        <img src="solar4.jpg" alt="Ground-mounted solar installation" onclick="openModal(this)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for image preview -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <img id="modalImage">
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Synergy Smart Group. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

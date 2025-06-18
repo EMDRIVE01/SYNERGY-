@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Synergy Smart Group</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .animated-header {
+      animation: fadeIn 1.5s ease-in-out;
+      font-size: 2rem;
+      color: #003366;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .service-icon {
+      width: 150px;
+      height: 150px;
+      margin-right: 10px;
+    }
+
+    .service-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 20px 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Services</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="container">
+      <h2 class="animated-header">Our Services</h2>
+
+      <div class="service-block">
+        <img src="IMAGES/098b31a4-419a-4dd5-aa21-a26f1ab2aec1.png" alt="Industrial Solar" class="service-icon">
+        <div>
+          <h3>Industrial Solar Energy Systems</h3>
+          <ul>
+            <li>Customized installations</li>
+            <li>Hybrid systems (solar + grid + generator)</li>
+            <li>Battery storage</li>
+            <li>Design, installation, and maintenance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-block">
+        <img src="IMAGES/fa8f7110-47f5-4317-9c01-bd042565b107.png" alt="Consulting" class="service-icon">
+        <div>
+          <h3>Energy Audits & Consulting</h3>
+          <ul>
+            <li>Site inspections</li>
+            <li>ROI analysis</li>
+            <li>Transition planning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-block">
+        <img src="IMAGES/1c9c65b6-8cd0-40a6-8112-3a1e6eea527a.png" alt="Infrastructure" class="service-icon">
+        <div>
+          <h3>Infrastructure Support</h3>
+          <ul>
+            <li>Civil/electrical works</li>
+            <li>Smart monitoring systems</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Synergy Smart Group. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
